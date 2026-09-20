@@ -67,6 +67,9 @@ For each module above:
 | TC-03 | Loan viewing | Log in as User A, change loan ID in URL/API to User B's | Access denied (403), not User B's data |
 | TC-04 | Profile | Submit script tags in profile "name" field | Input rejected or safely encoded |
 | TC-05 | Repayment | Attempt to submit negative repayment amount | Request rejected server-side |
+| TC-06 | Admin/staff areas | Attempt to access admin URLs as a normal user | Access denied (403), not admin panel |
+| TC-07 | API endpoints | Call loan API directly (bypassing UI) with another user's ID | Access denied, matching web behavior |
+| TC-08 | Auth | Check if password reset tokens expire after use/time | Token invalid after single use or timeout |
 
 ## 7. Environment
 - Lab defined in `docker-compose.yml`, isolated via a Docker `internal`
