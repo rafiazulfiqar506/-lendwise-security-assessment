@@ -1,0 +1,5 @@
+[2026-09-21T07:25:29Z] PASS — Brute-force login detection — top IP had 15 failed login attempts (threshold: 5)
+[2026-09-21T07:25:29Z] PASS — Directory scanning detection — 18 sensitive-path requests found (threshold: 5)
+[2026-09-21T07:25:29Z] PASS — ID enumeration detection — 26 sequential product/review ID requests found (threshold: 10)
+[2026-09-21T07:25:29Z] PASS — Non-browser User-Agent detection — 55 requests from scripted clients (curl/wget/python-requests)
+[2026-09-21T07:25:29Z] PASS — Elevated 4xx/5xx status codes — 16 of 146 requests returned 4xx/5xx (threshold: 5)
