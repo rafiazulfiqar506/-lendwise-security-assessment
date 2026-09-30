@@ -27,6 +27,16 @@ services:
       - "3000"
     volumes:
       - app-data:/app/data   # so we can snapshot/restore app state
+    # --- Hardening (Task 3) ---
+    cap_drop:
+      - ALL                       # remove all Linux capabilities by default
+    security_opt:
+      - no-new-privileges:true    # process can never gain more privileges than it starts with
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
 
   # --- Reverse proxy: makes the app reachable at staging.lendwise.test ---
   # This is the ONLY container with a foot in both networks, so it can
@@ -48,9 +58,42 @@ services:
     networks:
       - lab-internal
       - lab-edge
+    # --- Hardening (Task 3) ---
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - NET_BIND_SERVICE
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+
+  # --- Hardened Linux host (Task 3) ---
+  # Stands in for "the Linux host" that a real LendWise server would run
+  # on. This container gets SSH hardening, a firewall, and full patching
+  # applied — the actual deliverables for this task. It has NET_ADMIN so
+  # it can manage its own iptables rules internally; it is NOT on the
+  # app's isolated network, since this represents host-level
+  # administration, not the web application layer.
+  lendwise-host:
+    build: ./host
+    container_name: lendwise-host
+    restart: unless-stopped
+    networks:
+      - lab-edge
+    ports:
+      - "2222:22"     # SSH reachable at localhost:2222 only
+    cap_add:
+      - NET_ADMIN     # required to manage iptables rules inside the container
+      - NET_RAW
 
 networks:
-  # internal: true means Docker gives this network NO route out to the
   # host's real internet connection — this is the "network isolation"
   # the task asks for. The app container lives ONLY here.
   lab-internal:

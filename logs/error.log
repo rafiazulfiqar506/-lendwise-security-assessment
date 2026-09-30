@@ -94,3 +94,63 @@
 2026/09/20 13:23:33 [notice] 1#1: start worker process 30
 2026/09/20 13:23:33 [notice] 1#1: start worker process 31
 2026/09/20 13:23:33 [notice] 1#1: start worker process 32
+2026/09/21 07:42:06 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:07 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:08 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:09 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:10 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:12 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:16 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:23 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:42:36 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:43:03 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:43:54 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:44:55 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:45:55 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:05 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:06 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:07 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:07 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:09 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:11 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:14 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:21 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:46:34 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:47:00 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:47:52 [emerg] 1#1: chown("/var/cache/nginx/client_temp", 101) failed (1: Operation not permitted)
+2026/09/21 07:48:51 [notice] 1#1: using the "epoll" event method
+2026/09/21 07:48:51 [notice] 1#1: nginx/1.31.6
+2026/09/21 07:48:51 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/09/21 07:48:51 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/09/21 07:48:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/09/21 07:48:51 [notice] 1#1: start worker processes
+2026/09/21 07:48:51 [notice] 1#1: start worker process 21
+2026/09/21 07:48:51 [notice] 1#1: start worker process 22
+2026/09/21 07:48:51 [notice] 1#1: start worker process 23
+2026/09/21 07:48:51 [notice] 1#1: start worker process 24
+2026/09/21 07:48:51 [notice] 1#1: start worker process 25
+2026/09/21 07:48:51 [notice] 1#1: start worker process 26
+2026/09/21 07:48:51 [notice] 1#1: start worker process 27
+2026/09/21 07:48:51 [notice] 1#1: start worker process 28
+2026/09/21 07:48:51 [notice] 1#1: start worker process 29
+2026/09/21 07:48:51 [notice] 1#1: start worker process 30
+2026/09/21 07:48:51 [notice] 1#1: start worker process 31
+2026/09/21 07:48:51 [notice] 1#1: start worker process 32
+2026/09/30 08:32:01 [notice] 1#1: using the "epoll" event method
+2026/09/30 08:32:01 [notice] 1#1: nginx/1.31.6
+2026/09/30 08:32:01 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/09/30 08:32:01 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/09/30 08:32:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/09/30 08:32:01 [notice] 1#1: start worker processes
+2026/09/30 08:32:01 [notice] 1#1: start worker process 21
+2026/09/30 08:32:01 [notice] 1#1: start worker process 22
+2026/09/30 08:32:01 [notice] 1#1: start worker process 23
+2026/09/30 08:32:01 [notice] 1#1: start worker process 24
+2026/09/30 08:32:01 [notice] 1#1: start worker process 25
+2026/09/30 08:32:01 [notice] 1#1: start worker process 26
+2026/09/30 08:32:01 [notice] 1#1: start worker process 27
+2026/09/30 08:32:01 [notice] 1#1: start worker process 28
+2026/09/30 08:32:01 [notice] 1#1: start worker process 29
+2026/09/30 08:32:01 [notice] 1#1: start worker process 30
+2026/09/30 08:32:01 [notice] 1#1: start worker process 31
+2026/09/30 08:32:01 [notice] 1#1: start worker process 32

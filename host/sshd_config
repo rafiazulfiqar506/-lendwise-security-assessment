@@ -1,0 +1,30 @@
+# Hardened sshd_config for the LendWise lab host (Task 3)
+# Key changes from Ubuntu defaults are commented.
+
+Port 22
+Protocol 2
+
+# --- Key-only authentication (deliverable requirement) ---
+PasswordAuthentication no
+PubkeyAuthentication yes
+KbdInteractiveAuthentication no
+ChallengeResponseAuthentication no
+PermitEmptyPasswords no
+
+# --- No direct root login ---
+PermitRootLogin no
+
+# --- Only the intended admin user may connect ---
+AllowUsers labadmin
+
+# --- Reduce attack surface further ---
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+MaxAuthTries 3
+LoginGraceTime 30
+ClientAliveInterval 300
+ClientAliveCountMax 2
+
+UsePAM yes
+Subsystem sftp /usr/lib/openssh/sftp-server

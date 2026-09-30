@@ -1,0 +1,22 @@
+[2026-09-30T08:34:47Z] PASS — SSH password authentication disabled — PasswordAuthentication no found in sshd_config
+[2026-09-30T08:34:47Z] PASS — SSH public key authentication enabled — PubkeyAuthentication yes found in sshd_config
+[2026-09-30T08:34:47Z] PASS — SSH root login disabled — PermitRootLogin no found in sshd_config
+[2026-09-30T08:34:47Z] PASS — Firewall default INPUT policy is DROP — Chain INPUT (policy DROP)
+[2026-09-30T08:34:47Z] PASS — Firewall only allows port 22 inbound — only SSH (22) has an explicit ACCEPT rule
+[2026-09-30T08:34:47Z] FAIL — No unexpected listening services — unexpected ports listening: 34815
+59112
+[2026-09-30T08:34:47Z] PASS — Host is fully patched — 0 packages pending upgrade
+[2026-09-30T08:36:56Z] PASS — SSH password authentication disabled — PasswordAuthentication no found in sshd_config
+[2026-09-30T08:36:56Z] PASS — SSH public key authentication enabled — PubkeyAuthentication yes found in sshd_config
+[2026-09-30T08:36:56Z] PASS — SSH root login disabled — PermitRootLogin no found in sshd_config
+[2026-09-30T08:36:56Z] PASS — Firewall default INPUT policy is DROP — Chain INPUT (policy DROP)
+[2026-09-30T08:36:56Z] PASS — Firewall only allows port 22 inbound — only SSH (22) has an explicit ACCEPT rule
+[2026-09-30T08:36:56Z] FAIL — No unexpected listening services — unexpected ports listening: 34815
+[2026-09-30T08:36:56Z] PASS — Host is fully patched — 0 packages pending upgrade
+[2026-09-30T08:38:07Z] PASS — SSH password authentication disabled — PasswordAuthentication no found in sshd_config
+[2026-09-30T08:38:07Z] PASS — SSH public key authentication enabled — PubkeyAuthentication yes found in sshd_config
+[2026-09-30T08:38:07Z] PASS — SSH root login disabled — PermitRootLogin no found in sshd_config
+[2026-09-30T08:38:07Z] PASS — Firewall default INPUT policy is DROP — Chain INPUT (policy DROP)
+[2026-09-30T08:38:07Z] PASS — Firewall only allows port 22 inbound — only SSH (22) has an explicit ACCEPT rule
+[2026-09-30T08:38:07Z] PASS — No unexpected listening services — only port 22 listening
+[2026-09-30T08:38:07Z] PASS — Host is fully patched — 0 packages pending upgrade
