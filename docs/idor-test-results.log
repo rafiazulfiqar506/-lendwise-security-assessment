@@ -1,0 +1,1 @@
+[2026-10-04T07:56:46Z] VULNERABLE — GET /rest/basket/9 via User A's token — status=200 — body_snippet={"status":"success","data":{"id":9,"coupon":null,"UserId":28,"createdAt":"2026-10-04T07:56:46.864Z","updatedAt":"2026-10-04T07:56:46.864Z","Products":[]}} 
